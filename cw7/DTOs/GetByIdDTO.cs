@@ -1,6 +1,8 @@
-﻿namespace cw7.Entities;
+﻿using cw7.Entities;
 
-public class Pc
+namespace cw7.DTOs;
+
+public class GetByIdDTO
 {
     public int Id { get; set; }
     public string Name { get; set; } = string.Empty;
@@ -9,5 +11,5 @@ public class Pc
     public DateTime CreatedAt { get; set; }
     public int Stock{get;set;}
     
-    public List<PCComponent> PcComponents { get; set; }
+    public List<GetComponentDTO> Components { get; set; }
 }

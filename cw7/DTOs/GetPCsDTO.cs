@@ -1,6 +1,6 @@
-﻿namespace cw7.Entities;
+﻿namespace cw7.DTOs;
 
-public class Pc
+public class GetPCsDTO
 {
     public int Id { get; set; }
     public string Name { get; set; } = string.Empty;
@@ -9,5 +9,5 @@ public class Pc
     public DateTime CreatedAt { get; set; }
     public int Stock{get;set;}
     
-    public List<PCComponent> PcComponents { get; set; }
+    
 }
